@@ -2,14 +2,14 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const bookSchema = new Schema({
-    id: {type: String, require: true},
-    title: { type: String, require: true, default:"Titile!"},
-    authors: [{ type: String, require: true, default:"Author!"}],
-    description: { type: String, require: true, default:"Description!"},
-    image: { type: String, unique: true, dropDups: true, default:"Image!"},
-    link: { type: String, required: true, default:"Link!"}
-})
+  title: { type: String, required: true },
+  authors: [{type: String, required: true}],
+  description: String,
+  image: {type: String, trim: true},
+  link: {type: String, trim: true},
+  date: { type: Date, default: Date.now }
+});
 
-const GoogleBooks = mongoose.model("GoogleBooks", bookSchema);
+const Book = mongoose.model("Book", bookSchema);
 
-module.exports = GoogleBooks;
+module.exports = Book;

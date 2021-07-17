@@ -1,3 +1,3 @@
-module.exports = {
-    GoogleBooks: require("./book")
-  };
+  module.exports = {
+  Book: require("./book")
+};
