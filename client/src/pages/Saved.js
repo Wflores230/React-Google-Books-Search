@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Navbar from '../components/Navbar/index'
-import Jumbotron from '../components/Jumbotron/index'
-import API from '../utils/api'
+import Navbar from '../components/Navbar/index';
+import Jumbotron from '../components/Jumbotron/index';
+import API from '../utils/api';
 import ResultCard from "../components/ResultCard/index";
 
 class Saved extends Component {
