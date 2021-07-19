@@ -1,4 +1,4 @@
-import axios from "axios"
+import axios from "axios";
 
 export default {
     // Get book from google search 
@@ -26,4 +26,4 @@ export default {
         return axios.delete("/api/books/" + id);
     }
 
-}
+};
