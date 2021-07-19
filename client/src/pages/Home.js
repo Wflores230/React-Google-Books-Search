@@ -106,7 +106,7 @@ class Home extends Component {
                                     id={book.id}
                                     link={book.volumeInfo.infoLink}
                                     author={book.volumeInfo.authors}
-                                    image={book.volumeInfo.imageLinks.thumbnail}
+                                    image={book.volumeInfo.imageLinks}
                                     description={book.volumeInfo.description}
                                     saveBook={this.handleSaveBook}
                                 />
