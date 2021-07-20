@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export default {
+const API = {
     // Get book from google search 
     getGoogleSearchBooks: function (query) {
         return axios.get("https://www.googleapis.com/books/v1/volumes?q=" + query)
@@ -27,3 +27,5 @@ export default {
     }
 
 };
+
+export default API;
